@@ -23,7 +23,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="section id">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -148,15 +148,38 @@
 
         <section class="section" id="contact">
 
-            <h2>Contact Me</h2>
+    <h2>Contact Me | تواصل معي</h2>
 
-            <p>I'm happy to connect with you.</p>
+    <p>
+        Let's Work Together!
+        <br>
+        خلينا نشتغل مع بعض ونحوّل أفكارك لمشاريع مميزة.
+    </p>
 
-            <a href="mailto:mohamedzaghloul466@gmail.com" class="btn">
-                Send Me an Email
-            </a>
+    <form action="https://formspree.io/f/xoedwngj" method="POST">
 
-        </section>
+        <label for="name">Name | الاسم</label>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your name | اكتب اسمك" required>
+
+        <label for="email">Email Address | البريد الإلكتروني</label>
+        <input type="email" id="email" name="email"
+        placeholder="Enter your email | اكتب بريدك الإلكتروني" required>
+
+        <label for="subject">Subject | موضوع الرسالة</label>
+        <input type="text" id="subject" name="subject"
+        placeholder="Message subject | عنوان الرسالة" required>
+
+        <label for="message">Your Message | رسالتك</label>
+        <textarea id="message" name="message"
+        placeholder="Write your message here | اكتب رسالتك هنا"
+        rows="6" required></textarea>
+
+        <button type="submit">Send Message | إرسال الرسالة</button>
+
+    </form>
+
+</section>
 
     </main>
 
