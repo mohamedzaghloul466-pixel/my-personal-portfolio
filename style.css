@@ -432,23 +432,25 @@ button:hover,
 
 #contact {
     max-width: 850px;
-    margin: 60px auto;
-    padding: 40px 30px;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    margin: 70px auto;
+    padding: 45px 35px;
+    background: linear-gradient(145deg, #111827, #1e293b);
+    border: 1px solid #334155;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 #contact h2 {
     text-align: center;
-    font-size: 32px;
+    color: #ffffff;
+    font-size: 34px;
     margin-bottom: 15px;
 }
 
 #contact > p {
     text-align: center;
-    line-height: 1.8;
-    color: #666;
+    color: #cbd5e1;
+    line-height: 1.9;
     margin-bottom: 35px;
 }
 
@@ -459,44 +461,49 @@ button:hover,
 }
 
 #contact label {
+    color: #e2e8f0;
     font-weight: 600;
-    margin-top: 10px;
-    color: #333;
+    margin-top: 12px;
 }
 
 #contact input,
 #contact textarea {
     width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #f8f9fc;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #0f172a;
+    color: #ffffff;
+    border: 1px solid #475569;
+    border-radius: 12px;
     font-size: 15px;
     font-family: inherit;
     outline: none;
     transition: 0.3s;
-    box-sizing: border-box;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #94a3b8;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-    border-color: #2563eb;
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 #contact textarea {
+    min-height: 160px;
     resize: vertical;
-    min-height: 150px;
 }
 
 #contact button {
-    margin-top: 20px;
-    padding: 15px;
-    background: #2563eb;
-    color: white;
+    margin-top: 22px;
+    padding: 16px;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #ffffff;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
@@ -504,17 +511,18 @@ button:hover,
 }
 
 #contact button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
 @media (max-width: 600px) {
     #contact {
-        padding: 25px 18px;
-        margin: 35px 12px;
+        padding: 28px 18px;
+        margin: 40px 12px;
     }
 
     #contact h2 {
-        font-size: 25px;
+        font-size: 26px;
     }
 }
