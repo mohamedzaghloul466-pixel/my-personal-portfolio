@@ -62,3 +62,38 @@ document.addEventListener("keydown", function(event) {
         modal.style.display = "none";
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const images = document.querySelectorAll(".design-gallery a");
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const closeButton = document.querySelector(".close-modal");
+
+    images.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const image = link.querySelector("img");
+            modalImage.src = image.src;
+            modal.style.display = "flex";
+        });
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    });
+
+});
