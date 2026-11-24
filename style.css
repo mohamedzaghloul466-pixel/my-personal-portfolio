@@ -286,24 +286,11 @@ footer {
     color: white;
     font-size: 45px;
     cursor: pointer;
+    z-index: 10000;
+display: block;
 }
+ 
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const images = document.querySelectorAll(".design-gallery a");
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    const closeButton = document.querySelector(".close-modal");
-
-    images.forEach(function (link) {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const image = link.querySelector("img");
-            modalImage.src = image.src;
-            modal.style.display = "flex";
-        });
-    });
 
     closeButton.addEventListener("click", function () {
         modal.style.display = "none";
@@ -526,3 +513,93 @@ button:hover,
         font-size: 26px;
     }
 }
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .design-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .design-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #contact {
+        width: auto;
+        margin: 30px 12px;
+        padding: 25px 16px;
+    }
+
+    #contact input,
+    #contact textarea,
+    #contact button {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+profile.jpeg
+}
+
+/* Small Phones */
+@media (max-width: 380px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Logo Image */
+.navbar .logo img {
+    height: 55px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
