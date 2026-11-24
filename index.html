@@ -13,12 +13,13 @@
 
 <body>
 
+    <!-- NAVIGATION BAR -->
     <header>
         <nav class="navbar">
 
             <a href="#" class="logo">
-    <img src="logo.png" alt="Mohamed Zaghloul El Sherbiny">
-</a>
+                <img src="logo.png" alt="Mohamed Zaghloul El Sherbiny">
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -33,6 +34,7 @@
 
     <main>
 
+        <!-- HERO SECTION -->
         <section class="hero" id="home">
 
             <div class="hero-text">
@@ -55,48 +57,53 @@
 
             </div>
 
+            <!-- PROFILE PHOTO -->
             <div class="profile">
                 <img src="profile.jpeg" alt="Mohamed Zaghloul El Sherbiny">
             </div>
 
         </section>
 
+        <!-- ABOUT SECTION -->
         <section class="section" id="about">
 
             <h2>About Me</h2>
 
             <p>
-                <p>
-  Hello! I'm Mohamed Zaghloul El Sherbiny.
-  I'm passionate about technology, graphic design,
-  and digital creativity. I'm always eager to learn
-  new skills, explore creative ideas, and build
-  meaningful projects. My goal is to develop my
-  abilities, gain experience, and grow as a
-  professional in the digital world.
-</p>
+                Hello! I'm Mohamed Zaghloul El Sherbiny.
+                I'm passionate about technology, graphic design,
+                and digital creativity. I'm always eager to learn
+                new skills, explore creative ideas, and build
+                meaningful projects. My goal is to develop my
+                abilities, gain experience, and grow as a
+                professional in the digital world.
             </p>
 
         </section>
 
+        <!-- SKILLS SECTION -->
         <section class="section" id="skills">
 
             <h2>My Skills</h2>
 
             <div class="cards">
+
                 <div class="card">HTML</div>
                 <div class="card">CSS</div>
                 <div class="card">JavaScript</div>
                 <div class="card">Web Design</div>
                 <div class="card">Graphic Design (Canva)</div>
+
             </div>
 
         </section>
 
+        <!-- PROJECTS SECTION -->
         <section class="section" id="projects">
 
             <h2>My Projects</h2>
 
+            <!-- PERSONAL WEBSITE -->
             <div class="project-card">
 
                 <h3>My Personal Website</h3>
@@ -108,86 +115,127 @@
                 <span>HTML - CSS - JavaScript</span>
 
             </div>
-<div class="project-card">
 
-    <h3>Graphic Design Projects</h3>
+            <!-- GRAPHIC DESIGN PROJECTS -->
+            <div class="project-card">
 
-    <p>
-        A collection of creative graphic designs
-        created using Canva.
-    </p>
-<div class="design-gallery">
+                <h3>Graphic Design Projects</h3>
 
-    <a href="images/design1.jpeg">
-        <img src="images/design1.jpeg" alt="Design 1">
-    </a>
+                <p>
+                    A collection of creative graphic designs
+                    created using Canva.
+                </p>
 
-    <a href="images/design2.jpeg">
-        <img src="images/design2.jpeg" alt="Design 2">
-    </a>
+                <div class="design-gallery">
 
-    <a href="images/design3.jpeg">
-        <img src="images/design3.jpeg" alt="Design 3">
-    </a>
+                    <a href="images/design1.jpeg">
+                        <img src="images/design1.jpeg" alt="Design 1">
+                    </a>
 
-    <a href="images/design4.jpeg">
-        <img src="images/design4.jpeg" alt="Design 4">
-    </a>
+                    <a href="images/design2.jpeg">
+                        <img src="images/design2.jpeg" alt="Design 2">
+                    </a>
 
-    <a href="images/design5.jpeg">
-        <img src="images/design5.jpeg" alt="Design 5">
-    </a>
+                    <a href="images/design3.jpeg">
+                        <img src="images/design3.jpeg" alt="Design 3">
+                    </a>
 
-</div>
-<div id="imageModal" class="image-modal">
-    <span class="close-modal">&times;</span>
-    <img id="modalImage" src="" alt="Full Design">
-</div>
-    <span>Canva - Graphic Design</span>
+                    <a href="images/design4.jpeg">
+                        <img src="images/design4.jpeg" alt="Design 4">
+                    </a>
 
-</div>
+                    <a href="images/design5.jpeg">
+                        <img src="images/design5.jpeg" alt="Design 5">
+                    </a>
+
+                </div>
+
+                <span>Canva - Graphic Design</span>
+
+            </div>
+
+            
+
         </section>
 
+        <!-- CONTACT SECTION -->
         <section class="section" id="contact">
 
-    <h2>Contact Me | تواصل معي</h2>
+            <h2>Contact Me | تواصل معي</h2>
 
-    <p>
-        Let's Work Together!
-        <br>
-        خلينا نشتغل مع بعض ونحوّل أفكارك لمشاريع مميزة.
-    </p>
+            <p>
+                Let's Work Together!
+                <br>
+                خلينا نشتغل مع بعض ونحوّل أفكارك لمشاريع مميزة.
+            </p>
 
-    <form action="https://formspree.io/f/xoedwngj" method="POST">
+            <form action="https://formspree.io/f/xoedwngj" method="POST">
 
-        <label for="name">Name | الاسم</label>
-        <input type="text" id="name" name="name"
-        placeholder="Enter your name | اكتب اسمك" required>
+                <label for="name">Name | الاسم</label>
 
-        <label for="email">Email Address | البريد الإلكتروني</label>
-        <input type="email" id="email" name="email"
-        placeholder="Enter your email | اكتب بريدك الإلكتروني" required>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name | اكتب اسمك"
+                    required
+                >
 
-        <label for="subject">Subject | موضوع الرسالة</label>
-        <input type="text" id="subject" name="subject"
-        placeholder="Message subject | عنوان الرسالة" required>
+                <label for="email">Email Address | البريد الإلكتروني</label>
 
-        <label for="message">Your Message | رسالتك</label>
-        <textarea id="message" name="message"
-        placeholder="Write your message here | اكتب رسالتك هنا"
-        rows="6" required></textarea>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email | اكتب بريدك الإلكتروني"
+                    required
+                >
 
-        <button type="submit">Send Message | إرسال الرسالة</button>
+                <label for="subject">Subject | موضوع الرسالة</label>
 
-    </form>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Message subject | عنوان الرسالة"
+                    required
+                >
 
-</section>
+                <label for="message">Your Message | رسالتك</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here | اكتب رسالتك هنا"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message | إرسال الرسالة
+                </button>
+
+            </form>
+
+        </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Mohamed Zaghloul El Sherbiny. All Rights Reserved.</p>
+
+        <p>
+            © 2026 Mohamed Zaghloul El Sherbiny. All Rights Reserved.
+        </p>
+
     </footer>
-<script src="script.js"></script>
+<!-- IMAGE PREVIEW MODAL -->
+            <div id="imageModal" class="image-modal">
+
+                <span class="close-modal">&times;</span>
+
+                <img id="modalImage" src="" alt="Full Design">
+
+            </div>
 </body>
 </html>
