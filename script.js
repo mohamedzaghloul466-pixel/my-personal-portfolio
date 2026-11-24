@@ -1,99 +1,69 @@
-// lcome Message
+// Welcome Message
 console.log("Welcome to Mohamed's Portfolio!");
 
 // Navigation Links
-const links = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-links.forEach(function(link) {
-
+navLinks.forEach(function(link) {
     link.addEventListener("click", function() {
-
         console.log("You clicked: " + link.textContent);
-
     });
-
 });
 
 // View My Work Button
 const workButton = document.querySelector(".hero .btn");
 
-workButton.addEventListener("click", function() {
+if (workButton) {
+    workButton.addEventListener("click", function() {
+        console.log("Welcome to my projects!");
+    });
+}
 
-    console.log("Welcome to my projects!");
-
-});
-
-// Contact Message
+// Contact Button
 const contactButton = document.querySelector("#contact .btn");
 
-contactButton.addEventListener("click", function() {
+if (contactButton) {
+    contactButton.addEventListener("click", function() {
+        console.log("Thank you for visiting my portfolio!");
+    });
+}
 
-    console.log("Thank you for visiting my portfolio!");
-
-});
-console.log("JavaScript is working!");
+// Image Gallery
 const galleryLinks = document.querySelectorAll(".design-gallery a");
 const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const closeButton = document.querySelector(".close-modal");
 
-galleryLinks.forEach(function(link) {
-    link.addEventListener("click", function(event) {
-        event.preventDefault();
+if (modal && modalImage && closeButton) {
 
-        const image = link.querySelector("img");
-        modalImage.src = image.src;
-        modal.style.display = "flex";
-    });
-});
-
-closeButton.addEventListener("click", function() {
-    modal.style.display = "none";
-});
-
-modal.addEventListener("click", function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        modal.style.display = "none";
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const images = document.querySelectorAll(".design-gallery a");
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    const closeButton = document.querySelector(".close-modal");
-
-    images.forEach(function (link) {
-        link.addEventListener("click", function (event) {
+    galleryLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
             event.preventDefault();
 
             const image = link.querySelector("img");
-            modalImage.src = image.src;
-            modal.style.display = "flex";
+
+            if (image) {
+                modalImage.src = link.href;
+                modal.style.display = "flex";
+            }
         });
     });
 
-    closeButton.addEventListener("click", function () {
+    closeButton.addEventListener("click", function() {
         modal.style.display = "none";
     });
 
-    modal.addEventListener("click", function (event) {
+    modal.addEventListener("click", function(event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
 
-    document.addEventListener("keydown", function (event) {
+    document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             modal.style.display = "none";
         }
     });
+}
 
-});
+console.log("JavaScript is working!");
